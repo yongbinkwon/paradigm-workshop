@@ -1,15 +1,10 @@
 import { Task } from "./task.ts";
 
-function testyBesty() {
-  return "Imperativ kode er best";
-}
-
 function scheduleTasks(tasks: Task[]) {
   let workload: Task[] = [];
 
   for (let i = 0; i < tasks.length; i++) {
     const task = tasks[i];
-
     let isOverlapping = false;
 
     for (let j = 0; j < workload.length; j++) {
